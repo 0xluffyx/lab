@@ -12,11 +12,13 @@ import os, sys, json, time
 import requests
 import openpyxl
 
+API_KEY ='Bearer MjWOz9gwl6zQuggQ3QVI2OIDo31gEoTEAwh1fy2XxtekhEF0'
+"""
 API_KEY = os.environ.get("QCC_API_KEY", "")
 if not API_KEY:
     print("请先设置: export QCC_API_KEY='Bearer 你的key'")
     sys.exit(1)
-
+"""
 MCP_URL = "https://agent.qcc.com/mcp/company/stream"
 
 def query_company(name):
